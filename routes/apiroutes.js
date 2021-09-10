@@ -12,6 +12,17 @@ express.get('/notes', (req, res) => {
     
 })
 
+express.post('/notes', (req, res) => {
+    let dbfileTemplate = {
+        title: req.body.title,
+        text: req.body.text,
+        id: Math.floor(Math.random()*1000000)
+    }
+
+    dbfile.push(dbfileTemplate);
+    console.log (dbfile)
+    fs.writeFile('db/db.json')
+})
 
 
 
