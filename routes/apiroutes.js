@@ -21,7 +21,8 @@ express.post('/notes', (req, res) => {
 
     dbfile.push(dbfileTemplate);
     console.log (dbfile)
-    fs.writeFile('db/db.json')
+    fs.writeFile('db/db.json', JSON.stringify(dbfile))
+    res.json(dbfile)
 })
 
 
