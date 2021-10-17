@@ -20,8 +20,8 @@ express.post('/notes', (req, res) => {
     }
 
     dbfile.push(dbfileTemplate);
-    console.log (dbfile)
-    fs.writeFile('db/db.json', JSON.stringify(dbfile))
+   // console.log (dbfile)
+    fs.writeFileSync('db/db.json', JSON.stringify(dbfile))
     res.json(dbfile)
 })
 
