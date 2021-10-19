@@ -46,6 +46,8 @@ express.get("/notes/:id", function(req,res) {
 // Deletes a note with specific id
 express.delete("/notes/:id", function(req, res) {
     dbfile.splice(req.params.id, 1);
+    fs.writeFileSync('db/db.json', JSON.stringify(dbfile))
+    res.json(dbfile)
   
     console.log("Deleted note with id "+req.params.id);
 });
