@@ -21,11 +21,11 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-//set up Listener PORT
-app.listen(PORT, function(){
-  console.log ('App listening on port:' + PORT);
-}
-);
+// //set up Listener PORT
+// app.listen(PORT, function(){
+//   console.log ('App listening on port:' + PORT);
+// }
+// );
 
 
 
