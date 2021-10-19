@@ -1,8 +1,16 @@
+//require dependencies
+
 const express = require('express');
+const fs = require('fs')
+const path = require('path')
+
+//require routes
 const apiRoutes = require( './routes/apiroutes')
 const htmlRoutes = require('./routes/htmlRoutes')
+
+//initialize express app
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 
 
@@ -13,7 +21,11 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-
+//set up Listener PORT
+app.listen(PORT, function(){
+  console.log ('App listening on port:' + PORT);
+}
+);
 
 
 
