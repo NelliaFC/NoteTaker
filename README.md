@@ -32,16 +32,13 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Images
 
-![LandingPage](./public/Images/homepage.PNG)
+![Note Taker Page](./public/assets/images/Screen1.png)
 
-![Login](./public/Images/login.PNG)
+![Adding a Note](./public/assets/images/screen2.png)
 
-![Gallery](./public/Images/gallery.PNG)
 
-## Links
+[Note Taker GitHub Link]( )
 
-[TheArtSpace]()
-<!--this is where our Heroku link  goes. -->
 
 ## Contributors
 
