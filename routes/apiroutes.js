@@ -25,6 +25,9 @@ express.post('/notes', (req, res) => {
     res.json(dbfile)
 })
 
+express.get('/notes/:id', (req, res) => {
+    
+})
 // Setup the /api/notes post route
 // express.post("/api/notes", function(req, res) {
 //     // Receives a new note, adds it to db.json, then returns the new note
@@ -35,17 +38,18 @@ express.post('/notes', (req, res) => {
 // });
 
 // Retrieves a note with specific id
-express.get("notes/:id", function(req,res) {
+express.get("/notes/:id", function(req,res) {
     // display json for the notes array indices of the provided id
     res.json(notes[req.params.id]);
 });
 
 // Deletes a note with specific id
-express.delete("notes/:id", function(req, res) {
-    notes.splice(req.params.id, 1);
-    updateDb();
+express.delete("/notes/:id", function(req, res) {
+    dbfile.splice(req.params.id, 1);
+  
     console.log("Deleted note with id "+req.params.id);
 });
+
 
 
 
