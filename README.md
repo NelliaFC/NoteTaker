@@ -32,9 +32,9 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Images
 
-![Note Taker Page](./public/assets/images/Screen1.png)
+![Note Taker Page](/public/images/screen2.png)
 
-![Adding a Note](./public/assets/images/screen2.png)
+![Adding a Note](/public/images/Screen1.png)
 
 
 [Note Taker GitHub Link]( )
