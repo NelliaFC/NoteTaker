@@ -59,9 +59,6 @@ npm i express
 You can check out the rest of our projects here or reach out if you have any questions:
 
 * [Nellia Fleurova-Char](https://github.com/NelliaFC)
- 
-
-* [Nellia Fleurova-Char](https://github.com/NelliaFC)
   contact email address: nellia.f.charlton@gmail.com
 
 ## License
